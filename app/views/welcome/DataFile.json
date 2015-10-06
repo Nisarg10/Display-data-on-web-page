@@ -1,0 +1,63 @@
+[
+
+{
+	"city" : "Arlington, TX",
+	"Latitude" : "+32.73670",
+	"Longitude" : "-97.11330"
+},
+
+{
+	"city" : "Dallas, TX",
+	"Latitude" : "+32.78580",
+	"Longitude" : "-96.79360"
+},
+
+{
+	"city" : "Newark,NJ",
+	"Latitude" : "+40.73720",
+	"Longitude" : "-74.17190"
+},
+
+{
+	"city" : "New_York,NY",
+	"Latitude" : "+40.75170",
+	"Longitude" : "-73.99420"
+},
+
+{
+	"city" : "Washington,DC",               
+	"Latitude" : "+38.89750",
+	"Longitude" : "-77.00920"
+},
+
+{
+	"city" : "Chicago, IL",
+	"Latitude" : "+41.87440",
+	"Longitude" : "-87.63940"
+},
+
+{
+	"city" : "Mountain_View,CA",
+	"Latitude" : "+37.38830",
+	"Longitude" : "-122.08000"
+},
+
+{
+	"city" : "Miami,FL",
+	"Latitude" : "+25.77690",
+	"Longitude" : "-80.19220"
+},
+
+{
+	"city" : "Boston, MA",
+	"Latitude" : "+42.35670",
+	"Longitude" : "-71.05690"
+},
+
+{
+	"city" : "Phoenix,AZ",
+	"Latitude" : "+33.45330",
+	"Longitude" : "-112.07400"
+}
+
+]
