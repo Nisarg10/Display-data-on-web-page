@@ -4,7 +4,7 @@
 
                 //start ajax request
                 $.ajax({
-                    url: "welcome/DataFile.json",
+                    url: "app\views\welcome\DataFile.json",
                     dataType: "text",
                     success: function(data) {
 
