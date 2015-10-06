@@ -1,10 +1,16 @@
-$(document).ready(function(){
-	$('#button').click(function(){
-		
-			$.getJSON("welcome/DataFile.json",
-				function (json) {
-				alert("Nisarg chutiya");
-				var tr;
+ $(document).ready(function() {
+ 
+            $('#button').click(function(){
+
+                //start ajax request
+                $.ajax({
+                    url: "data.json",
+                    dataType: "text",
+                    success: function(data) {
+
+                        var json = $.parseJSON(data);
+                        
+                       	var tr;
 				for (var i = 0; i < json.length; i++) {
 					tr = $('<tr/>');
 					tr.append("<td>" + json[i].city + "</td>");
@@ -12,6 +18,7 @@ $(document).ready(function(){
 					tr.append("<td>" + json[i].Longitude + "</td>");
 					$('table').append(tr);
 				}
-    });
-	});
-});		
+                    }
+                });
+            });
+        });
