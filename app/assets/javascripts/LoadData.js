@@ -1,5 +1,5 @@
-
-	$("button").click(function(){
+$(document).ready(function(){
+	$('#button').click(function(){
 		
 			$.getJSON("welcome/DataFile.json",
 				function (json) {
@@ -13,4 +13,4 @@
 				}
     });
 	});
-		
+});		
