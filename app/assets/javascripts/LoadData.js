@@ -3,6 +3,7 @@ $(document).ready(function(){
 		
 			$.getJSON("welcome/DataFile.json",
 				function (json) {
+				alert("Nisarg chutiya");
 				var tr;
 				for (var i = 0; i < json.length; i++) {
 					tr = $('<tr/>');
