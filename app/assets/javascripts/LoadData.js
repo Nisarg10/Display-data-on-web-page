@@ -4,7 +4,7 @@
 
                 //start ajax request
                 $.ajax({
-                    url: "data.json",
+                    url: "DataFile.json",
                     dataType: "text",
                     success: function(data) {
 
