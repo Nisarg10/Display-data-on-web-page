@@ -44,7 +44,6 @@ function initialize(json){
         marker = new google.maps.Marker({
             position: position,
             map: map,
-            title: markers[i][0]
         });
 }
 
