@@ -43,7 +43,7 @@ function initialize(json){
         bounds.extend(position);
         marker = new google.maps.Marker({
             position: position,
-            map: map,
+            map: map
         });
 }
 
