@@ -9,10 +9,10 @@ $(document).ready(function() {
                     success: function(data) {
 
                         var json = $.parseJSON(data);
-                        
-                        var tr=$('<tr><th>City</th>
+                        $('table').append("<tr><th>City</th>
                     <th>Latitude</th>
-                    <th>Longitude</th></tr>');
+                    <th>Longitude</th></tr>");
+                        var tr;
                 for (var i = 0; i < json.length; i++) {
                     tr = $('<tr/>');
                     tr.append("<td>" + json[i].city + "</td>");
