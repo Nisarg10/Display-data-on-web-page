@@ -18,26 +18,33 @@
 					tr.append("<td>" + json[i].Longitude + "</td>");
 					$('table').append(tr);
 				}
-                    var marker;
-    var mapProp = {
-        center: new google.maps.LatLng(51.508742,-0.120850),
-        zoom: 5,
-        mapTypeId: google.maps.mapTypeId.ROADMAP
-    }
-
-    var map = new google.maps.Map(document.getElementById("google_map",mapProp);
-
-    for (var i = 0; i < json.length; i++) {
-        marker = new google.maps.Marker({
-            position: new google.maps.LatLng(Number(json[i].Latitude),Number(json[i].Longitude)),
-            map: map
-        });
-        marker.setMap(map);
-    };
+                    intialize(json);
 
                     }
                 });
             });
         });
 
+function initialize(json){
+
+    var map;
+    var bounds = new google.maps.LatLngBounds();
+    var mapOptions = {
+        mapTypeId: 'roadmap'
+    };
+
+    map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+    map.setTilt(45);
+
+    var marker,i;
+
+    for( i = 0; i < json.length; i++ ) {
+        var position = new google.maps.LatLng(json[i].Latitude, json[i].Longitude);
+        bounds.extend(position);
+        marker = new google.maps.Marker({
+            position: position,
+            map: map,
+            title: markers[i][0]
+        });
+}
 
