@@ -18,16 +18,7 @@
 					tr.append("<td>" + json[i].Longitude + "</td>");
 					$('table').append(tr);
 				}
-                    intialize(json);
-
-                    }
-                });
-            });
-        });
-
-function initialize(json){
-
-    var marker
+                    var marker;
     var mapProp = {
         center: new google.maps.LatLng(51.508742,-0.120850),
         zoom: 5,
@@ -43,5 +34,10 @@ function initialize(json){
         });
         marker.setMap(map);
     };
-}
+
+                    }
+                });
+            });
+        });
+
 
