@@ -12,7 +12,9 @@ $(document).ready(function() {
                         
                         var tr;
                 for (var i = 0; i < json.length; i++) {
-                    tr = $('<tr/>');
+                    tr = $('<tr><th>City</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th></tr><tr/>');
                     tr.append("<td>" + json[i].city + "</td>");
                     tr.append("<td>" + json[i].Latitude + "</td>");
                     tr.append("<td>" + json[i].Longitude + "</td>");
