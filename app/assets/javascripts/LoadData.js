@@ -24,3 +24,24 @@
                 });
             });
         });
+
+function initialize(json){
+
+    var marker,i;
+    var mapProp = {
+        center: new google.maps.LatLng(51.508742,-0.120850),
+        zoom: 5,
+        mapTypeId: google.maps.mapTypeId.ROADMAP
+    };
+
+    var map = new google.maps.Map(document.getElementById("google_map",mapProp);
+
+    for (i = 0; i < json.length; i++) {
+        marker = new google.maps.Marker({
+            position: new google.maps.LatLng(Number(json[i].Latitude),Number(json[i].Longitude)),
+            map: map
+        });
+        marker.setMap(map);
+    };
+}
+
