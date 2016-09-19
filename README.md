@@ -1,4 +1,4 @@
-
+In this application, using ruby and javaScript data from JSON file is displayed on web page without refressing the web page.
 
 a. What server framework did you choose and why?
       
